@@ -21,6 +21,18 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-dark);
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
+  font-weight: var(--font-weight-main);
+  line-height: var(--line-height);
+  font-optical-sizing: auto;
+}
+
 ul {
   list-style: none;
 }
@@ -28,6 +40,9 @@ ul {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul,
 ol,
@@ -45,4 +60,9 @@ textarea,
 select,
 button {
   font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

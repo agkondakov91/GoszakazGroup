@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,5 +7,44 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="#">
+          <div class="header__wrapper-logo"></div>
+        </a>
+        <nav class="header__wrapper-menu">
+          <ul class="header__wrapper-menu-list">
+            <li class="header__wrapper-menu-item active">
+              <a href="#">Главная</a>
+            </li>
+            <li class="header__wrapper-menu-item"><a href="#">О нас</a></li>
+            <li class="header__wrapper-menu-item"><a href="#">Контакты</a></li>
+            <li class="header__wrapper-menu-item"><a href="#">Поиск</a></li>
+            <li class="header__wrapper-menu-item">
+              <a href="tel:+798788787">
+                <img src="./images/icons/phone.svg" alt="" />
+                +7 (987) 887-87</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="header__wrapper-menu-bt">
+          <img src="./images/icons/menu.svg" alt="" />
+          Меню
+        </button>
+      </div>
+      <picture class="header__picture">
+        <source srcset="./images/jpg/main-lg.jpg" media="(min-width: 1440px)" />
+        <source srcset="./images/jpg/main-md.jpg" media="(min-width: 700px)" />
+        <source srcset="./images/jpg/main-sm.jpg" media="(min-width: 320px)" />
+        <img
+          src="./images/jpg/main-lg.jpg"
+          alt="изображение героя из фильма «V» значит Вендетта в окружении армии клонов из звёздных войн"
+        />
+      </picture>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
