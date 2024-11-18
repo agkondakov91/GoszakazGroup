@@ -13,7 +13,7 @@
   background-position: center;
   background-size: contain;
   width: 50px;
-  height: 49px;
+  height: 50px;
 }
 
 .header__wrapper-menu-list {
@@ -67,7 +67,11 @@
 
 @media (320px <= width < 700px) {
   .header__wrapper {
+    padding-block: clamp(0rem, -1.263rem + 6.32vw, 1.5rem);
     padding-inline: 20px;
+  }
+  .header__wrapper-logo {
+    width: clamp(2.188rem, 1.398rem + 3.95vw, 3.125rem);
   }
   .header__wrapper-menu {
     display: none;
