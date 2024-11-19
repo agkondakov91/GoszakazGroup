@@ -1,3 +1,8 @@
+@import url("./__logo/footer__logo.css");
+@import url("./__list/footer__list.css");
+@import url("./__list-item/footer__list-item.css");
+@import url("./__subtitle/footer__subtitle.css");
+
 .footer {
   padding-block: 40px;
   display: flex;
@@ -6,40 +11,16 @@
   background-color: var(--color-accent-light);
 }
 
-.footer__logo {
-  margin-block-end: 40px;
-  background-image: url("../../images/icons/logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 50px;
-  height: 50px;
-}
-
-.footer__list {
-  margin-block-end: 64px;
-  display: flex;
-  gap: 80px;
-}
-
-.footer__subtitle {
-  font-size: 14px;
-  text-align: center;
-}
-
-@media (width >= 1024px) {
-  .footer_list-item:hover {
-    color: var(--color-accent);
-  }
-}
-
 @media (320px <= width < 700px) {
   .footer {
     padding: clamp(1.25rem, 0.092rem + 5.79vw, 2.625rem);
   }
+
   .footer__logo {
+    width: clamp(2.188rem, 1.398rem + 3.95vw, 3.125rem);
     margin-block-end: 20px;
   }
+
   .footer__list {
     margin-block-end: 30px;
     flex-direction: column;

@@ -1,0 +1,18 @@
+.sidebar__form-submit {
+  height: 50px;
+  padding-inline: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+@media (width >= 1024px) {
+  .sidebar__form-submit:hover {
+    background-color: #6c7dd8;
+  }
+}

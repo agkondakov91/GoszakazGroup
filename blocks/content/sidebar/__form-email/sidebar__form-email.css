@@ -1,0 +1,6 @@
+.sidebar__form-email {
+  padding: 13px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--color-light-grey);
+}

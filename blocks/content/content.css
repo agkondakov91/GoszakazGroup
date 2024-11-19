@@ -1,0 +1,30 @@
+@import url("./main/main.css");
+@import url("./sidebar/sidebar.css");
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-block-end: 100px;
+  padding-block-start: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+@media (320px <= width < 1440px) {
+  .content {
+    margin-block-end: 80px;
+    flex-direction: column;
+  }
+}
+
+@media (700px <= width < 1440px) {
+  .content {
+    gap: 96px;
+  }
+}
+
+@media (320px <= width < 700px) {
+  .content {
+    gap: 60px;
+  }
+}

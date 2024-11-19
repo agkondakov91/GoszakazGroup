@@ -1,0 +1,22 @@
+.main {
+  width: 1040px;
+}
+
+.main__section {
+  height: 280px;
+  border: 1px solid rgb(0, 47, 255);
+}
+
+@media (700px <= width < 1440px) {
+  .main {
+    width: 100%;
+    padding-inline: 42px;
+  }
+}
+
+@media (320px <= width < 700px) {
+  .main {
+    width: 100%;
+    padding-inline: 20px;
+  }
+}

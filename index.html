@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Тестовое задание по адаптивной вёрстке главной страницы для Госзаказ Групп"
+    />
+    <meta name="keywords" content="html, css, верстка, web, лэндинг, дизайн" />
+    <meta name="author" content="Alexandr Kondakov" />
+    <meta property="og:title" content="Goszakaz Group Test" />
+    <!-- <meta property="og:url" content="https://agkondakov91.github.io/" /> -->
+    <meta property="og:image" content="images/jpg/OpenGraph.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="./images/icons/logo.svg" type="image/svg+xml" />
+    <title lang="en">Goszakaz Group Test</title>
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -29,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <button class="header__wrapper-menu-bt">
+        <button class="header__wrapper-menu-btn">
           <img src="./images/icons/menu.svg" alt="" />
           Меню
         </button>
@@ -44,22 +56,86 @@
         />
       </picture>
     </header>
-    <main></main>
+    <div class="content">
+      <main class="main">
+        <section class="main__section" aria-label="Блок статей">
+          <article class="main__section-card"></article>
+        </section>
+      </main>
+      <aside class="sidebar">
+        <section class="sidebar__news">
+          <h2 class="sidebar__news-title">Популярные новости</h2>
+          <div class="sidebar__news-cards">
+            <article class="sidebar__news-card" aria-label="ITAM&SAMDay">
+              <a href="#">ITAM&SAMDay – самая настоящая удача!</a>
+              <footer>
+                <span>13 дек 2020</span>
+              </footer>
+            </article>
+            <article
+              class="sidebar__news-card"
+              aria-label="Секреты лицензирования"
+            >
+              <a href="#"
+                >Секреты лицензирования. Всё, что вы хотели знать про Microsoft,
+                SAP и Oracle, но не знали, у кого спросить ...</a
+              >
+              <footer>
+                <span>10 дек 2020</span>
+              </footer>
+            </article>
+            <article
+              class="sidebar__news-card"
+              aria-label="Менеджмент XXI века"
+            >
+              <a href="#"
+                >Менеджмент XXI века. Надо ли готовиться к изменениям или мы
+                давно уже должны были измениться?</a
+              >
+              <footer>
+                <span>5 дек 2020</span>
+              </footer>
+            </article>
+          </div>
+        </section>
+        <section class="sidebar__subscribe">
+          <div class="sidebar__subscribe-wrapper">
+            <h2 class="sidebar__subscribe-title">Подписка на рассылку</h2>
+            <form class="sidebar__form">
+              <label for="email" class="visually-hidden"
+                >Введите ваш электронный адрес
+              </label>
+              <input
+                class="sidebar__form-email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email@gmail.com"
+              />
+              <button type="submit" class="sidebar__form-submit">
+                <span>Подписаться</span>
+                <img src="./images/icons/right-arrow.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </section>
+      </aside>
+    </div>
     <footer class="footer">
       <a href="#">
         <div class="footer__logo"></div>
       </a>
       <ul class="footer__list">
-        <li class="footer_list-item">
+        <li class="footer__list-item">
           <a href="#">О нас</a>
         </li>
-        <li class="footer_list-item">
+        <li class="footer__list-item">
           <a href="#">Галерея</a>
         </li>
-        <li class="footer_list-item">
+        <li class="footer__list-item">
           <a href="#">Новости</a>
         </li>
-        <li class="footer_list-item">
+        <li class="footer__list-item">
           <a href="#">Контакты</a>
         </li>
       </ul>

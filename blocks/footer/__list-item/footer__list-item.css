@@ -1,0 +1,5 @@
+@media (width >= 1024px) {
+  .footer__list-item:hover {
+    color: var(--color-accent);
+  }
+}

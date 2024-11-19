@@ -1,0 +1,131 @@
+@import url("./__news/sidebar__news.css");
+@import url("./__news-title/sidebar__news-title.css");
+@import url("./__news-cards/sidebar__news-cards.css");
+@import url("./__news-card/sidebar__news-card.css");
+
+@import url("./__subscribe/sidebar__subscribe.css");
+@import url("./__subscribe-wrapper/sidebar__subscribe-wrapper.css");
+@import url("./__subscribe-title/sidebar__subscribe-title.css");
+@import url("./__form/sidebar__form.css");
+@import url("./__form-email/sidebar__form-email.css");
+@import url("./__form-submit/sidebar__form-submit.css");
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (320px <= width < 1440px) {
+  .sidebar {
+    gap: 60px;
+  }
+
+  .sidebar__news {
+    max-width: 100%;
+  }
+
+  .sidebar__subscribe {
+    max-width: 100%;
+  }
+
+  .sidebar__subscribe-wrapper {
+    align-items: stretch;
+  }
+}
+
+@media (700px <= width < 1440px) {
+  .sidebar__news {
+    margin-inline: 42px;
+  }
+
+  .sidebar__news-cards {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .sidebar__news-card {
+    max-width: clamp(12.5rem, -1.003rem + 30.86vw, 18.75rem);
+    border-bottom: none;
+  }
+
+  .sidebar__news-card a {
+    height: 46px;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .sidebar__subscribe {
+    margin-inline: 42px;
+  }
+
+  .sidebar__subscribe-wrapper {
+    width: 644px;
+  }
+
+  .sidebar__subscribe-title {
+    align-self: flex-start;
+    margin-block-end: 20px;
+  }
+
+  .sidebar__form {
+    flex-direction: row;
+    justify-content: stretch;
+    gap: 20px;
+  }
+
+  .sidebar__form-email {
+    max-width: 380px;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  .sidebar__form-submit {
+    flex: 1;
+  }
+}
+
+@media (1024px <= width < 1440px) {
+  .sidebar__news-card {
+    max-width: clamp(18.75rem, -4.327rem + 36.06vw, 28.125rem);
+  }
+}
+
+@media (320px <= width < 700px) {
+  .sidebar__news {
+    margin-inline: 0;
+    padding-inline: 20px;
+  }
+
+  .sidebar__news-title {
+    text-align: center;
+  }
+
+  .sidebar__subscribe {
+    margin-inline: 0;
+    padding: 40px 20px 50px;
+    border-radius: 0;
+  }
+
+  .sidebar__subscribe-wrapper {
+    flex: 1;
+  }
+
+  .sidebar__subscribe-title {
+    align-self: center;
+  }
+}

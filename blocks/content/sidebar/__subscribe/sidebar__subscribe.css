@@ -1,0 +1,8 @@
+.sidebar__subscribe {
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 30px 50px;
+  border-radius: 20px;
+  background-color: #fff;
+}

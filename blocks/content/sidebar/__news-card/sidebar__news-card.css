@@ -1,0 +1,22 @@
+.sidebar__news-card {
+  padding-block-end: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid rgb(47 34 34 / 0.1);
+}
+
+.sidebar__news-card:last-of-type {
+  padding-block-end: 0;
+  border-bottom: none;
+}
+
+.sidebar__news-card a {
+  color: var(--color-dark);
+}
+
+@media (width >= 1024px) {
+  .sidebar__news-card a:hover {
+    color: var(--color-accent);
+  }
+}

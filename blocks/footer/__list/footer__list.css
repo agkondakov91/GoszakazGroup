@@ -1,0 +1,5 @@
+.footer__list {
+  margin-block-end: 64px;
+  display: flex;
+  gap: 80px;
+}
