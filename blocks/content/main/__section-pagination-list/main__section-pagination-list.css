@@ -1,0 +1,6 @@
+.main__section-pagination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

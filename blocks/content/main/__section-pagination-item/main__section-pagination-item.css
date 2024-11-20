@@ -1,0 +1,7 @@
+.main__section-pagination-item {
+  color: var(--color-dark);
+}
+
+.main__section-pagination-item:hover {
+  color: var(--color-accent);
+}

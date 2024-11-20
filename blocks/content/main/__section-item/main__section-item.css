@@ -22,3 +22,7 @@
 .main__section-item_theme_small h2 {
   color: #fff;
 }
+
+.main__section-item_theme_long {
+  padding: 30px 40px;
+}

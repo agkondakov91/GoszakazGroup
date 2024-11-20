@@ -25,3 +25,7 @@
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
 }
+
+.main__article-head_theme_long {
+  margin-block-end: 20px;
+}

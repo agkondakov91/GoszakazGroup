@@ -1,4 +1,5 @@
 .main__section-list {
+  margin-block-end: 80px;
   display: grid;
   grid-template-columns: 320px 1fr 320px;
   row-gap: 40px;
