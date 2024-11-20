@@ -12,3 +12,13 @@
 .main__section-item:has(a:focus-visible) {
   border: 1.5px solid var(--color-accent);
 }
+
+.main__section-item_theme_small {
+  padding: 40px 30px;
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.main__section-item_theme_small h2 {
+  color: #fff;
+}

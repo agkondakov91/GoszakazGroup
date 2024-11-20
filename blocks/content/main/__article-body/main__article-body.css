@@ -4,3 +4,11 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.main__article-body_full {
+  width: 100%;
+}
+
+.main__article-body_theme_small {
+  margin-block-start: 70px;
+}

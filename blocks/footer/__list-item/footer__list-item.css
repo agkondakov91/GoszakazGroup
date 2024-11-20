@@ -1,5 +1,9 @@
+.footer__list-item a {
+  color: var(--color-dark);
+}
+
 @media (width >= 1024px) {
-  .footer__list-item:hover {
+  .footer__list-item a:hover {
     color: var(--color-accent);
   }
 }

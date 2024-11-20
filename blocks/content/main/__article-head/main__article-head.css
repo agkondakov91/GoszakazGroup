@@ -10,3 +10,18 @@
   background-color: #f7f8fd;
   color: var(--color-accent);
 }
+
+.main__article-head_theme_small {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  bottom: 40px;
+  margin-block-end: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main__article-head_theme_small span {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
