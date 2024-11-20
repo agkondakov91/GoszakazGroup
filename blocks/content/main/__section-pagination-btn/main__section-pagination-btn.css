@@ -6,10 +6,6 @@
   color: var(--color-accent);
 }
 
-.main__section-pagination-btn:hover {
-  background: rgba(93, 113, 221, 0.15);
-}
-
 .main__section-pagination-btn:active {
   background: rgba(93, 113, 221, 0.2);
 }

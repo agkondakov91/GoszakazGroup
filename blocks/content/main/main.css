@@ -40,6 +40,14 @@
   .main__article-head_theme_small span:hover {
     background-color: var(--color-accent-dark);
   }
+
+  .main__section-pagination-item:hover {
+    color: var(--color-accent);
+  }
+
+  .main__section-pagination-btn:hover {
+    background: rgba(93, 113, 221, 0.15);
+  }
 }
 
 .grid-xl {
