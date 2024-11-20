@@ -1,0 +1,14 @@
+.main__section-item {
+  position: relative;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.main__section-item a:focus-visible {
+  outline: none;
+}
+
+.main__section-item:has(a:focus-visible) {
+  border: 1.5px solid var(--color-accent);
+}

@@ -1,0 +1,15 @@
+.sidebar__article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar__article a {
+  color: var(--color-dark);
+}
+
+@media (width >= 1024px) {
+  .sidebar__article a:hover {
+    color: var(--color-accent);
+  }
+}

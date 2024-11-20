@@ -1,0 +1,12 @@
+.main__article-head {
+  margin-block-end: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__article-head span {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #f7f8fd;
+  color: var(--color-accent);
+}

@@ -1,0 +1,6 @@
+.main__section-list {
+  display: grid;
+  grid-template-columns: 320px 1fr 320px;
+  row-gap: 40px;
+  column-gap: 40px;
+}

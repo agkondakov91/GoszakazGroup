@@ -11,7 +11,7 @@
     <meta name="keywords" content="html, css, верстка, web, лэндинг, дизайн" />
     <meta name="author" content="Alexandr Kondakov" />
     <meta property="og:title" content="Goszakaz Group Test" />
-    <!-- <meta property="og:url" content="https://agkondakov91.github.io/" /> -->
+    <meta property="og:url" content="https://goszakaz-group.vercel.app/" />
     <meta property="og:image" content="images/jpg/OpenGraph.jpg" />
     <meta property="twitter:card" content="summary_large_image" />
     <link rel="icon" href="./images/icons/logo.svg" type="image/svg+xml" />
@@ -58,45 +58,125 @@
     </header>
     <div class="content">
       <main class="main">
-        <section class="main__section" aria-label="Блок статей">
-          <article class="main__section-card"></article>
+        <section aria-label="Блок статей">
+          <ul class="main__section-list">
+            <li class="main__section-item one">
+              <a href="#">
+                <article class="main__article">
+                  <header class="main__article-head">
+                    <span>Категория 1</span>
+                    <time datetime="2020-13-12">13 дек 2020</time>
+                  </header>
+                  <div class="main__article-body">
+                    <h2>
+                      Управление ИТ-активами – скучная рутина или творческая
+                      задача?
+                    </h2>
+                    <p>
+                      Размышляя об управлении ИТ-активами, я вспомнил один
+                      учебный пример. Менеджер по ИТ-мощностям в крупной
+                      компании периодически готовил толстенный отчёт
+                      руководству. В очередной раз он не принёс отчёт, решив
+                      проверить, нужен ли он вообще.
+                    </p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="main__section-item two">
+              <a href="#">
+                <article>2</article>
+              </a>
+            </li>
+            <li class="main__section-item three">
+              <a href="#">
+                <article>3</article>
+              </a>
+            </li>
+            <li class="main__section-item four">
+              <a href="#">
+                <article>4</article>
+              </a>
+            </li>
+            <li class="main__section-item five">
+              <a href="#">
+                <article>5</article>
+              </a>
+            </li>
+            <li class="main__section-item six">
+              <a href="#">
+                <article>6</article>
+              </a>
+            </li>
+            <li class="main__section-item two">
+              <a href="#">
+                <article>7</article>
+              </a>
+            </li>
+            <li class="main__section-item three">
+              <a href="#">
+                <article>8</article>
+              </a>
+            </li>
+            <li class="main__section-item four">
+              <a href="#">
+                <article>9</article>
+              </a>
+            </li>
+            <li class="main__section-item five">
+              <a href="#">
+                <article>10</article>
+              </a>
+            </li>
+            <li class="main__section-item six">
+              <a href="#">
+                <article>11</article>
+              </a>
+            </li>
+          </ul>
         </section>
       </main>
       <aside class="sidebar">
         <section class="sidebar__news">
           <h2 class="sidebar__news-title">Популярные новости</h2>
-          <div class="sidebar__news-cards">
-            <article class="sidebar__news-card" aria-label="ITAM&SAMDay">
-              <a href="#">ITAM&SAMDay – самая настоящая удача!</a>
-              <footer>
-                <span>13 дек 2020</span>
-              </footer>
-            </article>
-            <article
-              class="sidebar__news-card"
-              aria-label="Секреты лицензирования"
-            >
-              <a href="#"
-                >Секреты лицензирования. Всё, что вы хотели знать про Microsoft,
-                SAP и Oracle, но не знали, у кого спросить ...</a
+          <ul class="sidebar__news-cards">
+            <li class="sidebar__news-card">
+              <article aria-label="ITAM&SAMDay" class="sidebar__article">
+                <a href="#">ITAM&SAMDay – самая настоящая удача!</a>
+                <footer>
+                  <time datetime="2020-13-12">13 дек 2020</time>
+                </footer>
+              </article>
+            </li>
+            <li class="sidebar__news-card">
+              <article
+                aria-label="Секреты лицензирования"
+                class="sidebar__article"
               >
-              <footer>
-                <span>10 дек 2020</span>
-              </footer>
-            </article>
-            <article
-              class="sidebar__news-card"
-              aria-label="Менеджмент XXI века"
-            >
-              <a href="#"
-                >Менеджмент XXI века. Надо ли готовиться к изменениям или мы
-                давно уже должны были измениться?</a
+                <a href="#"
+                  >Секреты лицензирования. Всё, что вы хотели знать про
+                  Microsoft, SAP и Oracle, но не знали, у кого спросить ...</a
+                >
+                <footer>
+                  <time datetime="2020-10-12">10 дек 2020</time>
+                </footer>
+              </article>
+            </li>
+            <li class="sidebar__news-card">
+              <article
+                aria-label="Менеджмент XXI века"
+                class="sidebar__article"
               >
-              <footer>
-                <span>5 дек 2020</span>
-              </footer>
-            </article>
-          </div>
+                <a href="#"
+                  >Менеджмент XXI века. Надо ли готовиться к изменениям или мы
+                  давно уже должны были измениться?</a
+                >
+                <footer>
+                  <time datetime="2020-05-12">5 дек 2020</time>
+                </footer>
+              </article>
+            </li>
+          </ul>
         </section>
         <section class="sidebar__subscribe">
           <div class="sidebar__subscribe-wrapper">

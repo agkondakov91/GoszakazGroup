@@ -1,10 +1,60 @@
+@import url("./__section-list/main__section-list.css");
+@import url("./__section-item/main__section-item.css");
+
+@import url("./__article-head/main__article-head.css");
+@import url("./__article-body/main__article-body.css");
+
 .main {
   width: 1040px;
 }
 
-.main__section {
-  height: 280px;
-  border: 1px solid rgb(0, 47, 255);
+@media (width >= 1024px) {
+  .main__section-item:hover {
+    box-shadow: 4px 8px 40px 0px rgba(8, 24, 111, 0.2);
+  }
+
+  .main__article-head span:hover {
+    background: rgba(93, 113, 221, 0.15);
+  }
+}
+
+.one {
+  grid-column: -1 / 1;
+}
+
+.two {
+  height: 400px;
+  grid-column: span 2;
+}
+
+.three {
+  height: 400px;
+}
+
+.four {
+  height: 400px;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.five {
+  height: 180px;
+  grid-column: span 2;
+}
+
+.six {
+  height: 180px;
+  grid-column: span 2;
+}
+
+@media (320px <= width < 1440px) {
+  .main__section-item {
+    padding: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+  }
+
+  .main__article-body {
+    width: 100%;
+  }
 }
 
 @media (700px <= width < 1440px) {
@@ -12,11 +62,79 @@
     width: 100%;
     padding-inline: 42px;
   }
+
+  .main__section-list {
+    grid-template-columns: 300px 1fr 300px;
+    column-gap: 20px;
+  }
+}
+
+@media (700px <= width < 1000px) {
+  .main__section-list {
+    grid-template-columns: 250px 1fr 250px;
+  }
 }
 
 @media (320px <= width < 700px) {
   .main {
     width: 100%;
     padding-inline: 20px;
+  }
+
+  .main__section-list {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .main__section-item {
+    height: 350px;
+  }
+
+  .main__article-head {
+    position: absolute;
+    top: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+    left: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+    bottom: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+    margin-block-end: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main__article-body {
+    margin-block-start: 60px;
+  }
+
+  .main__article-body p {
+    display: none;
+  }
+
+  .one {
+    grid-column: span 3;
+  }
+
+  .two {
+    height: 400px;
+    grid-column: span 3;
+  }
+
+  .three {
+    height: 400px;
+    grid-column: span 3;
+  }
+
+  .four {
+    height: 400px;
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  .five {
+    height: 180px;
+    grid-column: span 3;
+  }
+
+  .six {
+    height: 180px;
+    grid-column: span 3;
   }
 }

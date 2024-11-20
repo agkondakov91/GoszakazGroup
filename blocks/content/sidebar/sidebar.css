@@ -2,6 +2,7 @@
 @import url("./__news-title/sidebar__news-title.css");
 @import url("./__news-cards/sidebar__news-cards.css");
 @import url("./__news-card/sidebar__news-card.css");
+@import url("./__article/sidebar__article.css");
 
 @import url("./__subscribe/sidebar__subscribe.css");
 @import url("./__subscribe-wrapper/sidebar__subscribe-wrapper.css");
