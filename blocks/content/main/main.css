@@ -2,6 +2,7 @@
 @import url("./__section-item/main__section-item.css");
 @import url("./__article-head/main__article-head.css");
 @import url("./__article-body/main__article-body.css");
+@import url("./__section-load-btn/main__section-load-btn.css");
 @import url("./__section-pagination-list/main__section-pagination-list.css");
 @import url("./__section-pagination-item/main__section-pagination-item.css");
 @import url("./__section-pagination-btn/main__section-pagination-btn.css");
@@ -46,7 +47,11 @@
   }
 
   .main__section-pagination-btn:hover {
-    background: rgba(93, 113, 221, 0.15);
+    background-color: rgba(93, 113, 221, 0.15);
+  }
+
+  .main__section-pagination-btn:active {
+    background-color: rgba(93, 113, 221, 0.2);
   }
 }
 

@@ -5,7 +5,3 @@
   background-color: var(--color-accent-light);
   color: var(--color-accent);
 }
-
-.main__section-pagination-btn:active {
-  background: rgba(93, 113, 221, 0.2);
-}

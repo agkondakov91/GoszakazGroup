@@ -27,4 +27,8 @@
   .content {
     gap: 60px;
   }
+
+  .none {
+    display: none;
+  }
 }
